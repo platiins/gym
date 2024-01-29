@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GYM</title>
     <style>
         table {
             border: 3px solid black
@@ -57,7 +57,7 @@
     </section>
     <section>
         <h3>GROUP TRAININGS SCHEDULE</h3>
-        <table style="text-align:center; width:100%;"> 
+        <table style="text-align:center; width:fit-content"> 
             <thead>
                 <tr>
                     <th></th>
@@ -126,7 +126,7 @@
     </section>
     <section>
         <h3>PRICES</h3>
-        <table style="text-align:center; width:100%;">
+        <table style="text-align:center; width:50%">
             <caption><b>Introduction Visit:</b></caption>
                 <thead>
                     <tr>
@@ -142,7 +142,7 @@
                 </tbody>
         </table>
         <br>
-        <table style="text-align:center; width:100%;">
+        <table style="text-align:center; width:50%">
             <caption><b>Membership Cards:</b></caption>
                 <thead>
                     <tr>
@@ -166,7 +166,7 @@
                 </tbody>
         </table>
         <br>
-        <table style="text-align:center; width:100%;">
+        <table style="text-align:center; width:50%">
             <caption><b>Membership Cards for Unlimited Visits:</b></caption>
                 <thead>
                     <tr>
@@ -196,7 +196,57 @@
         </p>
     </section>
     <section>
-        <h3>SIGN UP FOR TRAININGS</h3>
+        <h3>SIGN UP FOR TRAINING</h3>
+            <form action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+        <br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </form>
+        <br>
+            <label for="trainings">Choose a training:</label>
+            <select id="trainings">
+                <option value="">---</option>
+                <option value="">Yoga</option>
+                <option value="">Pilates</option>
+                <option value="">Functional Fitness</option>
+                <option value="">Brasilian Butt</option>
+                <option value="">ABS & Back</option>
+            </select>
+        <br><br>
+            <label for="weekdays">Choose a day:</label>
+            <select id="weekdays">
+                <option value="">---</option>
+                <option value="">Monday</option>
+                <option value="">Tuesday</option>
+                <option value="">Wednesday</option>
+                <option value="">Thursday</option>
+                <option value="">Friday</option>
+                <option value="">Saturday</option>
+            </select>
+        <br><br>
+            <label for="city">Choose a city:</label>
+            <select id="city">
+                <option value="">---</option>
+                <option value="">Riga</option>
+                <option value="">Jurmala</option>
+                <option value="">Sigulda</option>
+                <option value="">Daugavpils</option>
+            </select>
+        <br>
+            <form action="/action_page.php">
+                <p>
+                    <label for="note">Leave a note:</label>
+                </p>
+                <textarea name="" id="note" cols="30" rows="3"></textarea>
+            </form>
+        <br>
+            <button 
+                type="button" 
+                style="background-color: lightskyblue">
+                <b>SUBMIT</b>
+            </button>
     </section>
     <section>
         <h3>CONTACTS</h3>
