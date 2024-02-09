@@ -70,13 +70,11 @@
                 <div class="pilates-info">
                     <h3>PILATES</h3>
                     <p>
-                        Sed accumsan condimentum dolor, at dictum ante pulvinar ut. In condimentum, sem eu sodales rutrum, arcu mauris placerat tellus, quis lacinia ex sem non orci. Mauris facilisis elit id sodales aliquam. 
+                        Pilates is a low-impact exercise method that focuses on strengthening muscles while improving postural alignment and flexibility. <strong> emphasizes controlled movements, breath awareness, and core stability to promote overall strength, mobility, and balance.</strong>                   
                     </p>
-                    <q>
-                        If you have ever been told that you have poor posture, then Pilates is definitely something you should consider trying. Poor posture can lead to a number of health problems, including back pain and joint problems. <strong>Pilates can help to correct your posture by strengthening the muscles in your back and shoulders.</strong>
-                    </q>
-                    <br><br>
-                    <cite> - Anna Watson</cite>
+                    <blockquote cite="Anna Watson">
+                        If you have ever been told that you have poor posture, then Pilates is definitely something you should consider trying. Poor posture can lead to a number of health problems, including back pain and joint problems.
+                    </blockquote>
                 </div>
                 <div class="pilates-video">
                     <video width="354px" height="472px" autoplay muted loop>
@@ -101,7 +99,10 @@
                 <div class="funkfit-info">
                     <h3>FUNCTIONAL FITNESS</h3>
                     <p>
-                    Aenean id placerat mi, id tincidunts sem. In id blandit justo. Praesent non nibh ac odio tempor ultrices quis nec ante. Fusce faucibus sodales sem vitae efficitur. Donec id hendrerit urna. Cras mattis mi eget dolor eleifend, eget consectetur quam euismod. Pellentesque hendrerit porta tempor. Pellentesque in ipsum ut nulla aliquet placerat.
+                        Functional fitness training focuses on exercises and movements that mimic real-life activities, emphasizing strength, flexibility, and endurance to improve overall function and performance in daily tasks and recreational activities. 
+                    </p>
+                    <p>
+                        Unlike traditional gym workouts that isolate specific muscle groups, functional fitness workouts typically involve compound movements that engage multiple muscle groups simultaneously, promoting coordination, balance, and stability.
                     </p>
                 </div>
                 <div class="funkfit-video">
@@ -117,6 +118,9 @@
                         min="0" 
                         max="5">
                     </meter>
+                    <address>
+                        Functional Fintess trainings are lead by <a href="https://www.instagram.com/">Ethan Thompson</a>
+                    </address>
                 </div>
             </article>
             <hr>
@@ -124,7 +128,10 @@
                 <div class="abs-info">
                     <h3>ABS & BACK</h3>
                     <p>
-                        Duis feugiat enim sapien. Mauris leo elit, ultrices nec viverra et, commodo eget ligula. Suspendisse maximus ex dapibus aliquam lobortis. Curabitur vitae urna non tortor sagittis hendrerit. In a magna purus. Mauris feugiat lorem vel pharetra aliquam. Phasellus ullamcorper id nibh ac consequat. Pellentesque ullamcorper nec lorem non pellentesque. Sed gravida, purus venenatis efficitur auctor, purus augue volutpat tortor, eget tristique erat arcu id urna. Ut bibendum malesuada lobortis. Morbi ac nibh eu erat cursus porttitor.
+                        <abbr title="abdominal training">ABS</abbr> and Back trainings focuse on strengthening the core muscles, including the abdominals and back muscles, through a variety of targeted exercises. Our certified trainers guide you through effective workouts designed to enhance core stability, improve posture, and prevent injuries.
+                    </p>
+                    <p>
+                        Whether you're aiming for a sculpted midsection or seeking to alleviate back pain, our ABS and Back Training sessions offer numerous benefits, including reduced risk of injury, improved functional strength for daily activities, enhanced athletic performance, and a toned physique.
                     </p>
                 </div>
                 <div class="abs-video">
@@ -140,6 +147,9 @@
                         min="0" 
                         max="5">
                     </meter>
+                    <address>
+                        ABS & Back trainings are lead by <a href="https://www.instagram.com/">Tom Henrikson</a>
+                    </address>
                 </div>
             </article>
         </section>
@@ -275,26 +285,37 @@
             <div class="sign-up-form">
                 <fieldset>
                 <legend>Register here!</legend>
-                    <form action="/action_page.php" method="get">
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname">
+                    <form action="/action_page.php" method="get" class="fill-name-form">
+                        <label for="fname"></label>
+                        <input 
+                            type="text" 
+                            id="fname" 
+                            name="fname" 
+                            required 
+                            placeholder="Full Name">
                     <br><br>
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname">
+                        <label for="lname"></label>
+                        <input 
+                            type="text" 
+                            id="lname" 
+                            name="lname"
+                            placeholder="Last name"
+                            required>
                     </form>
-                    <br><br>
-                        <label for="trainings">Choose a training:</label>
+                    <form action="/action_page.php" method="get" class="choose-train-form">
+                        <label for="trainings"></label>
                         <select id="trainings">
-                            <option value="">---</option>
+                            <option value="">Select a training</option>
                             <option value="">Yoga</option>
                             <option value="">Pilates</option>
                             <option value="">Functional Fitness</option>
                             <option value="">ABS & Back</option>
                         </select>
-                    <br><br>
-                        <label for="weekdays">Choose a day:</label>
+                    </form>
+                    <form action="/action_page.php" method="get" class="choose-day-form">
+                        <label for="weekdays"></label>
                         <select id="weekdays">
-                            <option value="">---</option>
+                            <option value="">Select a day</option>
                             <option value="">Monday</option>
                             <option value="">Tuesday</option>
                             <option value="">Wednesday</option>
@@ -302,26 +323,31 @@
                             <option value="">Friday</option>
                             <option value="">Saturday</option>
                         </select>
-                    <br><br>
-                        <label for="city">Choose a city:</label>
+                    </form>
+                    <form action="/action_page.php" method="get" class="choose-city-form">                        
+                        <label for="city"></label>
                         <select id="city">
-                            <option value="">---</option>
+                            <option value="">Select a city</option>
                             <option value="">Riga</option>
                             <option value="">Jurmala</option>
                             <option value="">Sigulda</option>
                             <option value="">Daugavpils</option>
                         </select>
-                    <br>
-                    <form action="/action_page.php">
-                        <label for="note">Leave a note:</label>
-                        <textarea name="" id="note" cols="30" rows="3"></textarea>
                     </form>
-                    <br>
-                    <button 
-                        type="button" 
-                        style="background-color: lightskyblue">
-                    <b>SUBMIT</b>
-                    </button>
+                    <form class="note-textarea">
+                        <label for="note"></label>
+                        <input 
+                        id="note" 
+                        name="note" 
+                        placeholder="Leave a note">
+                    </form>
+                    <div class="agreement-check">
+                        <input type="checkbox" name="agreement" id="agreement" required>
+                        <label for="checkbox">
+                            <small>I agree with <a href="">Terms and Conditions</a></small>
+                        </label>
+                    </div>
+                    <button type="button" class="submit-butt">SUBMIT</button>
                 </fieldset>
             </div>
         </section>
