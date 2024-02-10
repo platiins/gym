@@ -12,58 +12,76 @@ body {
     margin: 0;
 }
 
-.video-container {
-    margin: 0;
-}
-
-/* NAVIGATION BAR */
-
-.nav-main ul {
-    list-style: none;
-    display: inline-block;
-    padding-left: 0;
-    margin: 30px 0 0 50px;
-}
-
-.nav-main li{
-    display: inline-block;
-}
-
-.nav-main a {
+a {
     text-decoration: none;
     color: inherit; 
 }
 
-.search-bar-container {
-    display: inline-block;
-    margin: 30px 50px 0;
-    float: right;
+/* NAVIGATION BAR */
+
+.nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px 0 100px;
 }
 
-.search-bar {
+.nav-container li {
+   display: inline-block;
+}
+
+.nav-container ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-btn {
+    background-color: #414833;
+    border: none;
+    border-radius: 20px;
+    color: #d3cbaf;
+    padding: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #A4AC86;
+    color: #23291c;
+    opacity: 0.6;
+    font-weight: 700;
+}
+
+.search-bar-container {
     display: inline-block;
+    text-align: right;
+}
+
+.search-bar-input {
+    color: #23291c;
     background-color: #A4AC86;
     border: none;
     border-radius: 20px;
-    color: #23291c;
     padding: 16px;
     width: 150px;
     font-family: inherit;
     text-align: right;
     font-weight: 700;
     font-size: 16px;
-    margin: 4px 2px;
+    margin-right: 5px;
     opacity: 0.6;
-/* 
-how to remove margin that appears when user clicks on the search-bar?
-user-select: none; - did not help
+}
 
-outline=none
-
-set hight for each element in cards 
-
-pointer 
-*/
+.search-bar-input:focus {
+    outline: none;
 }
 
 .search-icon-btn {
@@ -78,37 +96,19 @@ pointer
     font-weight: 700;
 }
 
-.nav-btn {
-    background-color: #414833;
-    border: none;
-    border-radius: 20px;
-    color: #d3cbaf;
-    padding: 16px;
-    font-family: inherit;
-    font-weight: 400;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.nav-btn:hover {
-    background-color: #A4AC86;
-    color: #23291c;
-    opacity: 0.6;
-    font-weight: 700;
-}
-
 /* HEADER */
 
-.video-container {
-    display: block;
-    width: 100pw;
-    height: auto;
-    margin: 20px 0 0 0;
+.video-container video{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
+.video-container {
+    margin: 20px 0;
+}
 .gym-title {
     text-align: center;
     font-weight: 700;
@@ -254,5 +254,3 @@ main a:hover{
 .days-x {
     color: #A68A64;
 }
-
-.schedule-table

@@ -7,7 +7,7 @@
     <meta name="keywords" content="gym, trainings, schedule, sport, active">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM</title>
-    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <!--
         linnked google fonts
         font-family: 'Chivo', sans-serif;
@@ -39,32 +39,33 @@
 </head>
 <body>
     <header id="page-header">
-        <div class="nav-container">
-            <nav class="nav-main">
-                <ul>
-                    <li>
-                        <button type="button" class="nav-btn">TRAININGS</button>
-                    </li>
-                    <li>
-                        <button type="button" class="nav-btn">SCHEDULE</button>
-                    </li>
-                    <li>
-                        <button type="button" class="nav-btn">PRICES</button>
-                    </li>
-                    <li>
-                        <button type="button" class="nav-btn">SIGN UP</button>
-                    </li>
-                    <li>
-                        <button type="button" class="nav-btn">CONTACTS</button>
-                    </li>
-                </ul>
-                <div class="search-bar-container">                   
-                    <input class=search-bar type="text" placeholder="SEARCH">
-                    <button type="button" class="search-icon-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-            </nav>
+        <nav class="nav-container">
+            <ul>
+                 <li>
+                    <button type="button" class="nav-btn">TRAININGS</button>
+                </li>
+                <li>
+                    <button type="button" class="nav-btn">SCHEDULE</button>
+                </li>
+                <li>
+                    <button type="button" class="nav-btn">PRICES</button>
+                </li>
+                <li>
+                    <button type="button" class="nav-btn">SIGN UP</button>
+                </li>
+                <li>
+                    <button type="button" class="nav-btn">CONTACTS</button>
+                </li>
+            </ul>
+            <div class="search-bar-container"> 
+                <!-- add label lag and set in css as not visible-->                 
+                <input class=search-bar-input type="text" placeholder="SEARCH">
+                <button 
+                    type="button" class="search-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </nav>
         </div>
         <div class="video-container">
             <video 
