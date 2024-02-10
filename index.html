@@ -7,53 +7,94 @@
     <meta name="keywords" content="gym, trainings, schedule, sport, active">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM</title>
-    <link rel="stylesheet" href="./css/styles.css type=text/css">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <!--
+        linnked google fonts
+        font-family: 'Chivo', sans-serif;
+    -->
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+    <!--
+        linked icons from FONT AWESOME
+    -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <script src="./js/script.js" type="text/javascript"></script>
-    <style>
-        td {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
     <header id="page-header">
-        <h1 style="text-align: center;">GYM</h1>
-        <figure class="gym-main-video">
-            <video width="853px" height="360px" autoplay muted loop>
-                <source src="./videos/gym-main-video.mp4" type="video/mp4">
-                your browser does not support it
+        <div class="nav-container">
+            <nav class="nav-main">
+                <ul>
+                    <li>
+                        <button type="button" class="nav-btn">TRAININGS</button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-btn">SCHEDULE</button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-btn">PRICES</button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-btn">SIGN UP</button>
+                    </li>
+                    <li>
+                        <button type="button" class="nav-btn">CONTACTS</button>
+                    </li>
+                </ul>
+                <div class="search-bar-container">                   
+                    <input class=search-bar type="text" placeholder="SEARCH">
+                    <button type="button" class="search-icon-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="video-container">
+            <video 
+            autoplay muted loop poster="./images/background-picture.png">
+            <source src="./videos/gym-main-video.mp4" type="video/mp4">
             </video>
-        </figure>
-        <nav id="page-navigation">
-            <ul>
-                <li><a href="#trainings">Trainings</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#prices">Prices</a></li>
-                <li><a href="#sign-up">Sign Up</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
+        </div>
+        <div class="gym-title">
+            <h1>GYM</h1>
+        </div>
     </header>
     <main id="page-content">
         <section id="trainings">
-            <h2 style="text-align: center;">TRAININGS</h2>
-            <article class="yoga-container">
-                <div class="yoga-info">
+            <div class="training-section">
+                <div class="training-info">
                     <h3>YOGA</h3>
                     <p>
-                    Yoga is a centuries-old practice that harmonizes the mind, body, and spirit through a combination of physical postures, breath control, and meditation. It originated in ancient India and has evolved into various styles, catering to a wide range of preferences and fitness levels. 
+                        Yoga is a centuries-old practice that harmonizes the mind, body, and spirit through a combination of physical postures, breath control, and meditation. It originated in ancient India and has evolved into various styles. 
                     </p>
                     <p>
                         The holistic nature of yoga promotes flexibility, strength, and balance, fostering a profound connection between the practitioner and their inner self. Beyond the physical benefits, yoga is recognized for its ability to reduce stress, enhance mental focus, and promote overall well-being.
                     </p>
                 </div>
-                <div class="yoga-video">
-                    <video width="354px" height="472px" autoplay muted loop>
+                <div class="training-video">
+                    <video autoplay muted loop>
                         <source src="./videos/yoga-video.mp4" type="video/mp4">
-                        your browser does not support it
+                            your browser does not support it
                     </video>
                 </div>
-                <div class="yoga-meter">
+                <div class="training-meter">
                     <label for="intensity">Intensity:</label>
                     <meter id="intensity" 
                         value="2" 
@@ -64,25 +105,24 @@
                         Yoga practises are lead by <a href="https://www.instagram.com/">Emily Turner</a>
                     </address>
                 </div>
-            </article>
-            <hr>
-            <article class="pilates-container">
-                <div class="pilates-info">
+            </div>
+            <div class="training-section">
+                <div class="training-info">
                     <h3>PILATES</h3>
                     <p>
-                        Pilates is a low-impact exercise method that focuses on strengthening muscles while improving postural alignment and flexibility. <strong> emphasizes controlled movements, breath awareness, and core stability to promote overall strength, mobility, and balance.</strong>                   
+                        Pilates is a low-impact exercise method that focuses on strengthening muscles while improving postural alignment and flexibility. <strong>Pilates emphasizes controlled movements, breath awareness, and core stability to promote overall strength, mobility, and balance.</strong>                   
                     </p>
                     <blockquote cite="Anna Watson">
                         If you have ever been told that you have poor posture, then Pilates is definitely something you should consider trying. Poor posture can lead to a number of health problems, including back pain and joint problems.
                     </blockquote>
                 </div>
-                <div class="pilates-video">
-                    <video width="354px" height="472px" autoplay muted loop>
+                <div class="training-video">
+                    <video autoplay muted loop>
                         <source src="./videos/pilates-video.mp4" type="video/mp4">
-                        your browser does not support it
+                            your browser does not support it
                     </video>
                 </div>
-                <div class="pilates-meter">
+                <div class="training-meter">
                     <label for="intensity">Intensity:</label>
                     <meter id="intensity" 
                         value="2" 
@@ -93,11 +133,12 @@
                         Pilates sessions are lead by <a href="https://www.instagram.com/">Anna Watson</a>
                     </address>
                 </div>
-            </article>
-            <hr>
-            <article class="funkfit-container">
-                <div class="funkfit-info">
-                    <h3>FUNCTIONAL FITNESS</h3>
+            </div>
+            <div class="training-section">
+                <div class="training-info">
+                    <div class="funkfit-title">
+                        <h3>FUNCTIONAL FITNESS</h3>
+                    </div>
                     <p>
                         Functional fitness training focuses on exercises and movements that mimic real-life activities, emphasizing strength, flexibility, and endurance to improve overall function and performance in daily tasks and recreational activities. 
                     </p>
@@ -105,13 +146,13 @@
                         Unlike traditional gym workouts that isolate specific muscle groups, functional fitness workouts typically involve compound movements that engage multiple muscle groups simultaneously, promoting coordination, balance, and stability.
                     </p>
                 </div>
-                <div class="funkfit-video">
-                    <video width="354px" height="472px" autoplay muted loop>
+                <div class="training-video">
+                    <video autoplay muted loop>
                         <source src="./videos/finkfit-video.mp4" type="video/mp4">
                         your browser does not support it
                     </video>
                 </div>
-                <div class="funkfit-meter">
+                <div class="training-meter">
                     <label for="intensity">Intensity:</label>
                     <meter id="intensity" 
                         value="3" 
@@ -119,28 +160,30 @@
                         max="5">
                     </meter>
                     <address>
-                        Functional Fintess trainings are lead by <a href="https://www.instagram.com/">Ethan Thompson</a>
+                        Trainings are lead by <a href="https://www.instagram.com/">Ethan Thompson</a>
                     </address>
                 </div>
-            </article>
-            <hr>
-            <article class="abs-container">
-                <div class="abs-info">
+            </div>
+            <div class="training-section">
+                <div class="training-info">
                     <h3>ABS & BACK</h3>
                     <p>
-                        <abbr title="abdominal training">ABS</abbr> and Back trainings focuse on strengthening the core muscles, including the abdominals and back muscles, through a variety of targeted exercises. Our certified trainers guide you through effective workouts designed to enhance core stability, improve posture, and prevent injuries.
+                        <abbr title="abdominal training">ABS</abbr> and Back trainings focuse on strengthening the core muscles, including the abdominals and back muscles, through a variety of targeted exercises.
                     </p>
                     <p>
-                        Whether you're aiming for a sculpted midsection or seeking to alleviate back pain, our ABS and Back Training sessions offer numerous benefits, including reduced risk of injury, improved functional strength for daily activities, enhanced athletic performance, and a toned physique.
+                        Whether you're aiming for a sculpted midsection or seeking to alleviate back pain, these sessions offer numerous benefits, including reduced risk of injury, improved functional strength for daily activities and enhanced athletic performance.
+                    </p>
+                    <p>
+                        The abbreviation "ABS training" stands for "abdominal training".
                     </p>
                 </div>
-                <div class="abs-video">
-                    <video width="354px" height="472px" autoplay muted loop>
+                <div class="training-video">
+                    <video autoplay muted loop>
                         <source src="./videos/abs-video.mp4" type="video/mp4">
                         your browser does not support it
                     </video>
                 </div>
-                <div class="abs-meter">
+                <div class="training-meter">
                     <label for="intensity">Intensity:</label>
                     <meter id="intensity" 
                         value="5" 
@@ -148,66 +191,68 @@
                         max="5">
                     </meter>
                     <address>
-                        ABS & Back trainings are lead by <a href="https://www.instagram.com/">Tom Henrikson</a>
+                         ABS & Back trainings are lead by <a href="https://www.instagram.com/">Tom Henrikson</a>
                     </address>
                 </div>
-            </article>
+            </div>
         </section>
         <section id="schedule">
-            <h2 style="text-align: center;">GROUP TRAININGS SCHEDULE</h2>
-            <table style="text-align:center; width:fit-content"; border="2 px"> 
+            <div class="schedule-title">
+                <h2>GROUP TRAININGS SCHEDULE</h2>
+            </div>
+            <table class=schedule-table> 
                 <thead>
                     <tr>
-                        <th style="background-color: black;"></th>
-                        <th style="background-color: lightsteelblue;">Monday</th>
-                        <th style="background-color: lightsteelblue;">Tuesday</th>
-                        <th style="background-color: lightsteelblue;">Wednesday</th>
-                        <th style="background-color: lightsteelblue;">Thursday</th>
-                        <th style="background-color: lightsteelblue;">Friday</th>
-                        <th style="background-color: lightsteelblue;">Saturday</th>
-                        <th style="background-color: lightsteelblue;">Sunday</th>
+                        <th></th>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="background-color: lightsteelblue;"><b>Yoga</b></td>
-                        <td style="background-color: rgb(185, 253, 253);">8:00-10:00</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">8:00-10:00</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">10:00-12:00</td>
-                        <td>X</td>
+                        <td class="name-table">Yoga</td>
+                        <td class="hover-increase">8:00-10:00</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">8:00-10:00</td>
+                        <td class="days-x">X</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">10:00-12:00</td>
+                        <td class="days-x">X</td>
                     </tr>
                     <tr>
-                        <td style="background-color: lightsteelblue;"><b>Pilates</b></td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-19:30</td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-19:30</td>
-                        <td style="background-color: rgb(185, 253, 253);">12:00-13:30</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-19:30</td>
-                        <td>X</td>
-                        <td>X</td>
+                        <td class="name-table">Pilates</td>
+                        <td class="hover-increase">18:00-19:30</td>
+                        <td class="hover-increase">18:00-19:30</td>
+                        <td class="hover-increase">12:00-13:30</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">18:00-19:30</td>
+                        <td class="days-x">X</td>
+                        <td class="days-x">X</td>
                     </tr>
                     <tr>
-                        <td style="background-color: lightsteelblue;"><b>Functional Fitness</b></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-20:00</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">10:00-12:00</td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-20:00</td>
-                        <td>X</td>
+                        <td class="name-table">Functional</td>
+                        <td class="days-x">X</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">18:00-20:00</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">10:00-12:00</td>
+                        <td class="hover-increase">18:00-20:00</td>
+                        <td class="days-x">X</td>
                     </tr>
                     <tr>
-                        <td style="background-color: lightsteelblue;"><b>ABS & Back</b></td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">14:00-15:30</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">18:00-19:30</td>
-                        <td>X</td>
-                        <td style="background-color: rgb(185, 253, 253);">14:00-15:30</td>
-                        <td>X</td>
+                        <td class="name-table">ABS & Back</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">14:00-15:30</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">18:00-19:30</td>
+                        <td class="days-x">X</td>
+                        <td class="hover-increase">14:00-15:30</td>
+                        <td class="days-x">X</td>
                     </tr>
                 </tbody>
             </table>
