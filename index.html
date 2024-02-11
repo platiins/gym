@@ -42,24 +42,41 @@
         <nav class="nav-container">
             <ul>
                  <li>
-                    <button type="button" class="nav-btn">TRAININGS</button>
+                    <button type="button" class="nav-btn">
+                        <a href="#trainings">TRAININGS</a>
+                    </button>
                 </li>
                 <li>
-                    <button type="button" class="nav-btn">SCHEDULE</button>
+                    <button type="button" class="nav-btn">
+                        <a href="#schedule">SCHEDULE</a>
+                    </button>
                 </li>
                 <li>
-                    <button type="button" class="nav-btn">PRICES</button>
+                    <button type="button" class="nav-btn">
+                        <a href="#prices">PRICES</a>
+                    </button>
                 </li>
                 <li>
-                    <button type="button" class="nav-btn">SIGN UP</button>
+                    <button type="button" class="nav-btn">
+                        <a href="#sign-up">SIGN UP</a>
+                    </button>
                 </li>
                 <li>
-                    <button type="button" class="nav-btn">CONTACTS</button>
+                    <button type="button" class="nav-btn">
+                        <a href="#contacts">CONTACTS</a>
+                    </button>
                 </li>
             </ul>
             <div class="search-bar-container"> 
-                <!-- add label lag and set in css as not visible-->                 
-                <input class=search-bar-input type="text" placeholder="SEARCH">
+                <form action="" method="get" class="search-bar-form">
+                    <label for="search-input">search</label>
+                    <input 
+                        name="search-bar" 
+                        class="search-bar-input"
+                        id="search-bar-input" 
+                        type="text" 
+                        placeholder="SEARCH">
+                </form>
                 <button 
                     type="button" class="search-icon-btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -67,133 +84,142 @@
             </div>
         </nav>
         </div>
-        <div class="video-container">
-            <video 
-            autoplay muted loop poster="./images/background-picture.png">
-            <source src="./videos/gym-main-video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="gym-title">
-            <h1>GYM</h1>
+        <div class="header-container">
+            <div class="gym-title">
+                <h1>GYM</h1>
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop poster="./images/background-picture.png">
+                <source src="./videos/gym-main-video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </header>
     <main id="page-content">
         <section id="trainings">
-            <div class="training-section">
-                <div class="training-info">
-                    <h3>YOGA</h3>
-                    <p>
-                        Yoga is a centuries-old practice that harmonizes the mind, body, and spirit through a combination of physical postures, breath control, and meditation. It originated in ancient India and has evolved into various styles. 
-                    </p>
-                    <p>
-                        The holistic nature of yoga promotes flexibility, strength, and balance, fostering a profound connection between the practitioner and their inner self. Beyond the physical benefits, yoga is recognized for its ability to reduce stress, enhance mental focus, and promote overall well-being.
-                    </p>
-                </div>
-                <div class="training-video">
-                    <video autoplay muted loop>
-                        <source src="./videos/yoga-video.mp4" type="video/mp4">
-                            your browser does not support it
-                    </video>
-                </div>
-                <div class="training-meter">
-                    <label for="intensity">Intensity:</label>
-                    <meter id="intensity" 
-                        value="2" 
-                        min="0" 
-                        max="5">
-                    </meter>
-                    <address>
-                        Yoga practises are lead by <a href="https://www.instagram.com/">Emily Turner</a>
-                    </address>
-                </div>
+            <div class="trainings-subtitle">
+                <h2>TRAININGS</h2>
             </div>
-            <div class="training-section">
-                <div class="training-info">
-                    <h3>PILATES</h3>
-                    <p>
-                        Pilates is a low-impact exercise method that focuses on strengthening muscles while improving postural alignment and flexibility. <strong>Pilates emphasizes controlled movements, breath awareness, and core stability to promote overall strength, mobility, and balance.</strong>                   
-                    </p>
-                    <blockquote cite="Anna Watson">
-                        If you have ever been told that you have poor posture, then Pilates is definitely something you should consider trying. Poor posture can lead to a number of health problems, including back pain and joint problems.
-                    </blockquote>
-                </div>
-                <div class="training-video">
-                    <video autoplay muted loop>
-                        <source src="./videos/pilates-video.mp4" type="video/mp4">
-                            your browser does not support it
-                    </video>
-                </div>
-                <div class="training-meter">
-                    <label for="intensity">Intensity:</label>
-                    <meter id="intensity" 
-                        value="2" 
-                        min="0" 
-                        max="5">
-                    </meter>
-                    <address>
-                        Pilates sessions are lead by <a href="https://www.instagram.com/">Anna Watson</a>
-                    </address>
-                </div>
-            </div>
-            <div class="training-section">
-                <div class="training-info">
-                    <div class="funkfit-title">
-                        <h3>FUNCTIONAL FITNESS</h3>
+            <div class="training-sections-container">
+                <div class="training-section">
+                    <div class="training-info">
+                        <h3>YOGA</h3>
+                        <p>
+                            Yoga is a centuries-old practice that harmonizes the mind, body, and spirit through a combination of physical postures, breath control, and meditation.
+                        </p>
+                        <br>
+                        <p>
+                            The holistic nature of yoga promotes flexibility, strength, and balance, fostering a profound connection between the practitioner and their inner self. Beyond the physical benefits, yoga is recognized for its ability to reduce stress, enhance mental focus, and promote overall well-being.
+                        </p>
                     </div>
-                    <p>
-                        Functional fitness training focuses on exercises and movements that mimic real-life activities, emphasizing strength, flexibility, and endurance to improve overall function and performance in daily tasks and recreational activities. 
-                    </p>
-                    <p>
-                        Unlike traditional gym workouts that isolate specific muscle groups, functional fitness workouts typically involve compound movements that engage multiple muscle groups simultaneously, promoting coordination, balance, and stability.
-                    </p>
+                    <div class="training-video">
+                        <video autoplay muted loop>
+                            <source src="./videos/yoga-video.mp4" type="video/mp4">
+                                your browser does not support it
+                        </video>
+                    </div>
+                    <div class="training-meter">
+                        <label for="intensity">Intensity:</label>
+                        <meter id="intensity" 
+                            value="2" 
+                            min="0" 
+                            max="5">
+                        </meter>
+                        <address>
+                            Yoga practises are lead by <a href="https://www.instagram.com/">Emily Turner</a>
+                        </address>
+                    </div>
                 </div>
-                <div class="training-video">
-                    <video autoplay muted loop>
-                        <source src="./videos/finkfit-video.mp4" type="video/mp4">
-                        your browser does not support it
-                    </video>
+                <div class="training-section">
+                    <div class="training-info">
+                        <h3>PILATES</h3>
+                        <p>
+                            Pilates is a low-impact exercise method that focuses on strengthening muscles while improving postural alignment and flexibility. Pilates emphasizes controlled movements, breath awareness, and core stability.                  
+                        </p>
+                        <blockquote cite="Anna Watson">
+                            If you have ever been told that you have poor posture, then Pilates is definitely something you should consider trying. Poor posture can lead to a number of health problems, including back pain and joint problems.
+                        </blockquote>
+                    </div>
+                    <div class="training-video">
+                        <video autoplay muted loop>
+                            <source src="./videos/pilates-video.mp4" type="video/mp4">
+                                your browser does not support it
+                        </video>
+                    </div>
+                    <div class="training-meter">
+                        <label for="intensity">Intensity:</label>
+                        <meter id="intensity" 
+                            value="2" 
+                            min="0" 
+                            max="5">
+                        </meter>
+                        <address>
+                            Pilates sessions are lead by <a href="https://www.instagram.com/">Anna Watson</a>
+                        </address>
+                    </div>
                 </div>
-                <div class="training-meter">
-                    <label for="intensity">Intensity:</label>
-                    <meter id="intensity" 
-                        value="3" 
-                        min="0" 
-                        max="5">
-                    </meter>
-                    <address>
-                        Trainings are lead by <a href="https://www.instagram.com/">Ethan Thompson</a>
-                    </address>
+                <div class="training-section">
+                    <div class="training-info">
+                        <div class="funkfit-title">
+                            <h3>FUNCTIONAL</h3>
+                        </div>
+                        <p>
+                            Functional fitness training focuses on exercises and movements that mimic real-life activities, emphasizing strength, flexibility, and endurance to improve overall function and performance in daily tasks and recreational activities. 
+                        </p>
+                        <br>
+                        <p>
+                            Functional fitness workouts typically involve compound movements that engage multiple muscle groups simultaneously, promoting coordination, balance, and stability.
+                        </p>
+                    </div>
+                    <div class="training-video">
+                        <video autoplay muted loop>
+                            <source src="./videos/finkfit-video.mp4" type="video/mp4">
+                            your browser does not support it
+                        </video>
+                    </div>
+                    <div class="training-meter">
+                        <label for="intensity">Intensity:</label>
+                        <meter id="intensity" 
+                            value="3" 
+                            min="0" 
+                            max="5">
+                        </meter>
+                        <address>
+                            Trainings are lead by <a href="https://www.instagram.com/">Ethan Thompson</a>
+                        </address>
+                    </div>
                 </div>
-            </div>
-            <div class="training-section">
-                <div class="training-info">
-                    <h3>ABS & BACK</h3>
-                    <p>
-                        <abbr title="abdominal training">ABS</abbr> and Back trainings focuse on strengthening the core muscles, including the abdominals and back muscles, through a variety of targeted exercises.
-                    </p>
-                    <p>
-                        Whether you're aiming for a sculpted midsection or seeking to alleviate back pain, these sessions offer numerous benefits, including reduced risk of injury, improved functional strength for daily activities and enhanced athletic performance.
-                    </p>
-                    <p>
-                        The abbreviation "ABS training" stands for "abdominal training".
-                    </p>
-                </div>
-                <div class="training-video">
-                    <video autoplay muted loop>
-                        <source src="./videos/abs-video.mp4" type="video/mp4">
-                        your browser does not support it
-                    </video>
-                </div>
-                <div class="training-meter">
-                    <label for="intensity">Intensity:</label>
-                    <meter id="intensity" 
-                        value="5" 
-                        min="0" 
-                        max="5">
-                    </meter>
-                    <address>
-                         ABS & Back trainings are lead by <a href="https://www.instagram.com/">Tom Henrikson</a>
-                    </address>
+                <div class="training-section">
+                    <div class="training-info">
+                        <h3>ABS & BACK</h3>
+                        <p>
+                            <abbr title="abdominal training">ABS</abbr> and Back trainings focuse on strengthening the core muscles, including the abdominals and back muscles, through a variety of targeted exercises.
+                        </p>
+                        <br>
+                        <p>
+                            Whether you're aiming for a sculpted midsection or seeking to alleviate back pain, these sessions offer numerous benefits, including reduced risk of injury, improved functional strength for daily activities and enhanced athletic performance.
+                        </p>
+                        <p>
+                            The abbreviation "ABS training" stands for "abdominal training".
+                        </p>
+                    </div>
+                    <div class="training-video">
+                        <video autoplay muted loop>
+                            <source src="./videos/abs-video.mp4" type="video/mp4">
+                            your browser does not support it
+                        </video>
+                    </div>
+                    <div class="training-meter">
+                        <label for="intensity">Intensity:</label>
+                        <meter id="intensity" 
+                            value="5" 
+                            min="0" 
+                            max="5">
+                        </meter>
+                        <address>
+                             ABS & Back trainings are lead by <a href="https://www.instagram.com/">Tom Henrikson</a>
+                        </address>
+                    </div>
                 </div>
             </div>
         </section>

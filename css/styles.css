@@ -1,15 +1,13 @@
 body {
     font-family: 'Chivo', sans-serif;
-    background-color: #22221e;
+    background-color: #C2C5AA;
     color: #d3cbaf;
     margin: 0;
+    box-sizing: border-box;
 }
 
 #page-content {
-    font-family: 'Chivo', sans-serif;
-    background-color: #C2C5AA;
-    color: #22221e;
-    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -25,18 +23,26 @@ a {
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px 0 100px;
-}
-
-.nav-container li {
-   display: inline-block;
+    gap: 10px 30px;
+    padding: 20px 50px 0 75px;
+    font-size: 16px;
 }
 
 .nav-container ul {
     list-style: none; 
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px 10px
 }
+
+.nav-container li {
+    display: inline-block;
+ }
 
 .nav-btn {
     background-color: #414833;
@@ -65,13 +71,21 @@ a {
     text-align: right;
 }
 
+.search-bar-form {
+    display: inline-block;
+}
+
+.search-bar-form label {
+    display: none;
+}
+
 .search-bar-input {
     color: #23291c;
     background-color: #A4AC86;
     border: none;
     border-radius: 20px;
     padding: 16px;
-    width: 150px;
+    width: 250px;
     font-family: inherit;
     text-align: right;
     font-weight: 700;
@@ -84,51 +98,60 @@ a {
     outline: none;
 }
 
+.search-bar-form input::placeholder,
+.search-bar-form input::-moz-placeholder {
+    color: #23291c;
+    opacity: 1;
+}
+
 .search-icon-btn {
     background-color: transparent;
-    color: #A4AC86;
+    color: #333D29;
     border: none;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
 }
 
 .search-icon-btn:hover {
-    color: #333D29;
+    color: #A4AC86;
     opacity: 1;
     font-weight: 700;
 }
 
-/* HEADER */
+/* /* HEADER - VIDEO + TITLE */
 
-.video-container video{
-    position: relative;
-    right: 0;
-    bottom: 0;
+.gym-title {
+    padding: 30px;
+    background: rgb(34,34,30);
+    background: linear-gradient(0deg, rgb(33, 33, 31) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
+}
+
+.gym-title h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 200px;
+    color: #414833;
+    transition: 0.5s;
+}
+
+.gym-title h1:hover {
+    color: #A4AC86;
+    transition: 0.5s;
+}
+
+.video-container video {
     min-width: 100%;
     min-height: 100%;
+    position: relative;
 }
 
-.video-container {
-    margin: 20px 0;
-}
-.gym-title {
-    text-align: center;
-    font-weight: 700;
-    padding: 10px 0;
-    margin: 0;
-    font-size: 30px;
-    background: #22221e;
-    background: linear-gradient(180deg, #22221e 0%, #656D4A 60%, #C2C5AA 100%);
-    transition: 0.3s;
-}
-
-.gym-title:hover{
-    color:#22221e
-}
-
-/* TRAININGS CARDS*/
+/* TRAININGS SECTION*/
 
 main a {
     text-decoration: none;
     color: inherit; 
+    font-weight: 500;
 }
 
 main a:hover{
@@ -136,20 +159,52 @@ main a:hover{
     font-weight: 500;
 }
 
+/* TRAININGS SUBTITLE */
+
+.trainings-subtitle {
+    padding: 30px 0;
+    background: rgb(34,34,30);
+    background: linear-gradient(180deg, rgba(34,34,30,1) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
+}
+
+.trainings-subtitle h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 100px;
+    color: #d3cbaf;
+    transition: 0.5s;
+}
+
+.trainings-subtitle h2:hover {
+    color: #414833;
+    transition: 0.5s;
+}
+
+/*  TRAINING SECTIONS*/
+
+.training-sections-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
 .training-section {
-    width: 20%;
     display: inline-block;
-    margin: 0 1% 2% 1%;
+    width: 20%;
+    min-width: 300px;
+    padding: 20px;
     background-color: #656D4A;
     border: none;
     border-radius: 20px;
     color: #d3cbaf;
-    padding: 16px;
     font-family: inherit;
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
     font-size: 20px;
-    vertical-align: top;
     transition: 0.3s;
 }
 
@@ -159,11 +214,22 @@ main a:hover{
 
 .training-section video {
     width: 100%;
-    margin-top: 20px 0;
+    margin-top: 30px 0;
 }
 
 .training-info {
     margin-bottom: 20px;
+    min-height: 450px;
+}
+
+.training-info p, blockquote {
+    text-align: left;
+}
+
+.training-info h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 3;
 }
 
 .training-section:hover{
@@ -171,11 +237,6 @@ main a:hover{
     border: #656D4A solid 3px;
     border-radius: 20px;
     color: #656D4A
-}
-
-.training-info h3 {
-    font-weight: 700;
-    font-size: 30px;
 }
 
 .training-meter {
@@ -190,10 +251,6 @@ main a:hover{
 
 .training-section blockquote {
     margin: 20px 0;
-}
-
-#trainings {
-    padding: 30px;
 }
 
 .funkfit-title>h3 {
