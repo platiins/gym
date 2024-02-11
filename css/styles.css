@@ -36,7 +36,7 @@ a {
     flex-flow: row wrap;
     align-content: center;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px 10px
 }
 
@@ -67,8 +67,10 @@ a {
 }
 
 .search-bar-container {
-    display: inline-block;
-    text-align: right;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .search-bar-form {
@@ -85,7 +87,7 @@ a {
     border: none;
     border-radius: 20px;
     padding: 16px;
-    width: 250px;
+    width: fit-content;
     font-family: inherit;
     text-align: right;
     font-weight: 700;
@@ -119,10 +121,10 @@ a {
     font-weight: 700;
 }
 
-/* /* HEADER - VIDEO + TITLE */
+/* HEADER - TITLE */
 
 .gym-title {
-    padding: 30px;
+    padding: 30px 0 70px;
     background: rgb(34,34,30);
     background: linear-gradient(0deg, rgb(33, 33, 31) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
 }
@@ -131,7 +133,7 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 200px;
-    color: #414833;
+    color: #22221e;
     transition: 0.5s;
 }
 
@@ -140,9 +142,10 @@ a {
     transition: 0.5s;
 }
 
+/* HEADER - MAIN VIDEO */
+
 .video-container video {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     position: relative;
 }
 
@@ -162,7 +165,7 @@ main a:hover{
 /* TRAININGS SUBTITLE */
 
 .trainings-subtitle {
-    padding: 30px 0;
+    padding: 100px 0 70px;
     background: rgb(34,34,30);
     background: linear-gradient(180deg, rgba(34,34,30,1) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
 }
@@ -176,11 +179,11 @@ main a:hover{
 }
 
 .trainings-subtitle h2:hover {
-    color: #414833;
+    color: #22221e;
     transition: 0.5s;
 }
 
-/*  TRAINING SECTIONS*/
+/*  TRAINING CARDS*/
 
 .training-sections-container {
     display: flex;
@@ -261,48 +264,65 @@ main a:hover{
 
 #schedule {
     background-color: #22221e;
+    margin-bottom: 50px;
 }
-/* SCHEDULE TITLE */
 
-.schedule-title {
-    text-align: center;
-    font-weight: 700;
-    padding: 20px;
-    margin: 0;
-    font-size: 30px;
-    color: #e6ccb2;
+/* SCHEDULE SUBTITLE */
+
+.schedule-subtitle {
+    padding: 100px 0 70px;
     background: #22221e;
     background: linear-gradient(360deg, #22221e 0%, #656D4A 55%, #C2C5AA 100%);
-    transition: 0.3s;
+}   
+
+.schedule-subtitle h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 100px;
+    color: #22221e;
+    transition: 0.5s;
 }
 
-.schedule-title:hover{
-    color:#22221e
+.schedule-subtitle h2:hover {
+    color: #d3cbaf;
+    transition: 0.5s;
 }
 
 /* SCHEDULE TABLE */
 
 .schedule-table {
     text-align:center; 
-    width:auto; 
+    width: auto;
     border: 2px;
     color: #d3cbaf;
     font-size: 25px;
     font-weight: 100;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px 100px;
+    align-items: center;
+    align-content: center;
 }
 
 .schedule-table td {
     border: solid 2px #d3cbaf;
     padding: 5px 15px;
+    text-wrap: nowrap;
 }
 
-.hover-increase:hover{
+#empty-cell {
+    border: none transparent;
+    background-color: transparent;
+}
+
+.hover-increase:hover {
     background-color: #A68A64;
     color: #22221e;
+    border: solid 4px #d3cbaf;
+    font-weight: 700;
 }
 
-.name-table {
+.dark-cell {
     background-color: #A68A64;
     border: solid 1px #A68A64;
     color: #22221e;
@@ -310,4 +330,5 @@ main a:hover{
 
 .days-x {
     color: #A68A64;
+    font-weight: 700;
 }
