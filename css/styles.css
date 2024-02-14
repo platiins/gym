@@ -24,7 +24,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 10px 30px;
-    padding: 20px 50px 0 75px;
+    padding: 30px 50px 0 75px;
     font-size: 16px;
 }
 
@@ -135,6 +135,7 @@ a {
     font-size: 200px;
     color: #22221e;
     transition: 0.5s;
+    overflow-wrap: break-word;
 }
 
 .gym-title h1:hover {
@@ -174,12 +175,13 @@ main a:hover{
     font-weight: 700;
     text-align: center;
     font-size: 100px;
-    color: #d3cbaf;
+    color: #22221e;
     transition: 0.5s;
+    overflow-wrap: break-word;
 }
 
 .trainings-subtitle h2:hover {
-    color: #22221e;
+    color: #d3cbaf;
     transition: 0.5s;
 }
 
@@ -264,7 +266,6 @@ main a:hover{
 
 #schedule {
     background-color: #22221e;
-    margin-bottom: 50px;
 }
 
 /* SCHEDULE SUBTITLE */
@@ -281,6 +282,7 @@ main a:hover{
     font-size: 100px;
     color: #22221e;
     transition: 0.5s;
+    overflow-wrap: break-word;
 }
 
 .schedule-subtitle h2:hover {
@@ -292,16 +294,19 @@ main a:hover{
 
 .schedule-table {
     text-align:center; 
-    width: auto;
     border: 2px;
     color: #d3cbaf;
     font-size: 25px;
     font-weight: 100;
     display: flex;
-    flex-direction: row;
-    padding: 0 100px 100px;
+    flex-flow: row wrap;
+    padding: 0 100px 50px;
     align-items: center;
     align-content: center;
+    justify-content: flex-start;
+    overflow: scroll;
+    scrollbar-color: #A68A64 #22221e;
+    scrollbar-width: thin;
 }
 
 .schedule-table td {
@@ -328,7 +333,86 @@ main a:hover{
     color: #22221e;
 }
 
-.days-x {
+.day-without-training {
     color: #A68A64;
     font-weight: 700;
+}
+
+/* PRICES SECTION */
+
+/* PRICES SUBTITLE */
+
+.prices-subtitle {
+    padding: 100px 0 40px;
+    background: rgb(34,34,30);
+    background: linear-gradient(180deg, rgba(34,34,30,1) 10%, rgba(101,109,74,1) 50%, rgba(194,197,170,1) 100%);
+}
+
+.prices-subtitle h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 100px;
+    color: #22221e;
+    transition: 0.5s;
+    overflow-wrap: break-word;
+}
+
+.prices-subtitle h2:hover {
+    color: #d3cbaf;
+    transition: 0.5s;
+}
+
+/* PRICES TABLES */
+
+.prices-table-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.prices-table-container h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 50px;
+    color: #22221e;
+    overflow-wrap: break-word;
+    margin: 30px 0px;
+}
+
+.prices-table {
+    text-align:center; 
+    font-size: 25px;
+    font-weight: 100;
+    /* padding: 0 100px 50px; */
+    overflow: scroll;
+    scrollbar-color: #656D4A #C2C5AA;
+    scrollbar-width: thin;
+}
+
+.prices-table th {
+    border: solid 2px #22221e;
+    padding: 5px 15px;
+    text-wrap: nowrap;
+    background-color: #656D4A;
+    color: #C2C5AA;
+
+} 
+
+.prices-table td {
+    border: solid 2px #22221e;
+    padding: 5px 15px;
+    text-wrap: nowrap;
+    background-color: transparent;
+    color: #22221e;
+} 
+
+#prices p {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 30px 0;
+    font-style: italic;
+    color: #22221e;
+    text-align: center;
 }
