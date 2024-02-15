@@ -299,7 +299,7 @@
                         <tbody>
                             <tr>
                                 <td>3-times introduction visit</td>
-                                <td>9 €</td>
+                                <td class="prices-bold">9 €</td>
                             </tr>
                         </tbody>
                     </table>
@@ -316,15 +316,15 @@
                         <tbody>
                             <tr>
                                 <td>1-time visit</td>
-                                <td>4 €</td>
+                                <td class="prices-bold">4 €</td>
                             </tr>
                             <tr>
                                 <td>5-times membership card</td>
-                                <td>15 €</td>
+                                <td class="prices-bold">15 €</td>
                             </tr>
                             <tr>
                                 <td>10-times membership card</td>
-                                <td>30 €</td>
+                                <td class="prices-bold">30 €</td>
                             </tr>
                         </tbody>
                     </table>
@@ -341,17 +341,17 @@
                         <tbody>
                             <tr>
                                 <td>1 month</td>
-                                <td>25 €</td>
+                                <td class="prices-bold">25 €</td>
                             <tr>
                                 <td>3 months</td>
-                                <td>60 €</td>
+                                <td class="prices-bold">60 €</td>
                             </tr>
                             <tr>
                                 <td>6 months</td>
-                                <td>120 €</td>
+                                <td class="prices-bold">120 €</td>
                             <tr>
                                 <td>12 months</td>
-                                <td>200 €</td>
+                                <td class="prices-bold">200 €</td>
                             </tr>
                         </tbody>
                     </table>
@@ -360,10 +360,12 @@
             </div>
         </section>
         <section id="sign-up">
-            <div class="sign-up-form">
-                <fieldset>
-                <legend>Register here!</legend>
-                    <form action="/action_page.php" method="get" class="fill-name-form">
+            <div class="sign-up-subtitle">
+                <h2>SIGN UP</h2>
+            </div>
+            <div class="sign-up-section-container">
+                <div class="sign-up-form-container">
+                    <form action="" method="get" class="sign-up-text-input">
                         <label for="fname"></label>
                         <input 
                             type="text" 
@@ -371,62 +373,61 @@
                             name="fname" 
                             required 
                             placeholder="Full Name">
-                    <br><br>
+                    </form>
+                    <form action="" method="get" class="sign-up-text-input">
                         <label for="lname"></label>
                         <input 
                             type="text" 
                             id="lname" 
                             name="lname"
-                            placeholder="Last name"
-                            required>
+                            placeholder="Last Name"
+                            >
                     </form>
-                    <form action="/action_page.php" method="get" class="choose-train-form">
+                    <form action="" method="get">
                         <label for="trainings"></label>
-                        <select id="trainings">
-                            <option value="">Select a training</option>
+                        <select id="training" placeholder="select a training">
+                            <option value="" disabled selected>Select a training</option>
                             <option value="">Yoga</option>
                             <option value="">Pilates</option>
                             <option value="">Functional Fitness</option>
                             <option value="">ABS & Back</option>
                         </select>
                     </form>
-                    <form action="/action_page.php" method="get" class="choose-day-form">
+                    <form action="" method="get">
                         <label for="weekdays"></label>
                         <select id="weekdays">
-                            <option value="">Select a day</option>
+                            <option value="" disabled selected>Select a day</option>
                             <option value="">Monday</option>
                             <option value="">Tuesday</option>
                             <option value="">Wednesday</option>
                             <option value="">Thursday</option>
                             <option value="">Friday</option>
                             <option value="">Saturday</option>
-                        </select>
+                            </select>
                     </form>
-                    <form action="/action_page.php" method="get" class="choose-city-form">                        
+                    <form action="" method="get">                        
                         <label for="city"></label>
                         <select id="city">
-                            <option value="">Select a city</option>
+                            <option value="" disabled selected>Select a city</option>
                             <option value="">Riga</option>
                             <option value="">Jurmala</option>
                             <option value="">Sigulda</option>
                             <option value="">Daugavpils</option>
                         </select>
                     </form>
-                    <form class="note-textarea">
+                    <form class="sign-up-text-input">
                         <label for="note"></label>
                         <input 
                         id="note" 
                         name="note" 
                         placeholder="Leave a note">
                     </form>
-                    <div class="agreement-check">
+                    <div class="sign-up-checkbox">
                         <input type="checkbox" name="agreement" id="agreement" required>
-                        <label for="checkbox">
-                            <small>I agree with <a href="">Terms and Conditions</a></small>
-                        </label>
+                        <label for="checkbox" class="checkbox-label"> I agree with <a href="./pages/terms-conditions.html">Terms and Conditions</a></label>
                     </div>
-                    <button type="button" class="submit-butt">SUBMIT</button>
-                </fieldset>
+                    <button type="button" class="submit-btn">SUBMIT</button>
+                </div>
             </div>
         </section>
         <section id="contacts">
