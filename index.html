@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
-    
+
     <!-- <link 
         rel="preconnect" 
         href="https://fonts.googleapis.com"
@@ -356,92 +356,102 @@
                 <p>Card payments only! Prices including VAT.</p>
             </div>
         </section>
-        <section id="sign-up">
-            <div class="sign-up-subtitle">
-                <h2>SIGN UP</h2>
-            </div>
-            <div class="sign-up-section-container">
-                <div class="sign-up-form-container">
-                    <form action="" method="get" class="sign-up-text-input">
-                        <label for="fname"></label>
-                        <input 
-                            type="text" 
-                            id="fname" 
-                            name="fname" 
-                            required 
-                            placeholder="Full Name">
-                    </form>
-                    <form action="" method="get" class="sign-up-text-input">
-                        <label for="lname"></label>
-                        <input 
-                            type="text" 
-                            id="lname" 
-                            name="lname"
-                            placeholder="Last Name">
-                    </form>
-                    <form action="" method="get">
-                        <label for="trainings"></label>
-                        <select id="training" placeholder="select a training">
-                            <option value="" disabled selected>Select a training</option>
-                            <option value="">Yoga</option>
-                            <option value="">Pilates</option>
-                            <option value="">Functional Fitness</option>
-                            <option value="">ABS & Back</option>
-                        </select>
-                    </form>
-                    <form action="" method="get">
-                        <label for="weekdays"></label>
-                        <select id="weekdays">
-                            <option value="" disabled selected>Select a day</option>
-                            <option value="">Monday</option>
-                            <option value="">Tuesday</option>
-                            <option value="">Wednesday</option>
-                            <option value="">Thursday</option>
-                            <option value="">Friday</option>
-                            <option value="">Saturday</option>
-                            </select>
-                    </form>
-                    <form action="" method="get">                        
-                        <label for="city"></label>
-                        <select id="city">
-                            <option value="" disabled selected>Select a city</option>
-                            <option value="">Riga</option>
-                            <option value="">Jurmala</option>
-                            <option value="">Sigulda</option>
-                            <option value="">Daugavpils</option>
-                        </select>
-                    </form>
-                    <form class="sign-up-text-input">
-                        <label for="note"></label>
-                        <input 
-                        id="note" 
-                        name="note" 
-                        placeholder="Leave a note">
-                    </form>
-                    <div class="sign-up-checkbox">
-                        <input type="checkbox" name="agreement" id="agreement" required>
-                        <label for="checkbox" class="checkbox-label"> I agree with <a href="./pages/terms-conditions.html">Terms and Conditions</a></label>
-                    </div>
-                    <button type="button" class="submit-btn">SUBMIT</button>
+        <div class="signup-and-contacts-container">
+            <section id="sign-up" class="signup-main-container">
+                <div class="sign-up-subtitle">
+                    <h2>SIGN UP</h2>
                 </div>
-            </div>
-        </section>
-        <section id="contacts">
-            <h2 style="text-align: center;">CONTACTS</h2>
-            <p><b>Address:</b> Unknown Steet 2, City</p>
-            <p><b>Phone:</b> +473 4567890</p>
-            <p><b>Email:</b> testuser@gmail.com</p>
-            <h4>WORKING HOURS</h4>
-            <p>MON - SUN</p>
-            <p>7:00-23:00</p>
-            <a href="https://www.instagram.com/">Follow us on Instagram</a>
-            <br><br>
-            <a href="https://www.facebook.com/">Follow us on Facebook</a>
-        </section>
+                <div class="sign-up-section-container">
+                    <div class="sign-up-form-container">
+                        <form action="" method="get" class="sign-up-text-input">
+                            <label for="fname"></label>
+                            <input 
+                                type="text" 
+                                id="fname" 
+                                name="fname" 
+                                required 
+                                placeholder="Full Name">
+                        </form>
+                        <form action="" method="get" class="sign-up-text-input">
+                            <label for="lname"></label>
+                            <input 
+                                type="text" 
+                                id="lname" 
+                                name="lname"
+                                placeholder="Last Name">
+                        </form>
+                        <form action="" method="get">
+                            <label for="trainings"></label>
+                            <select id="training" placeholder="select a training">
+                                <option value="" disabled selected>Select a training</option>
+                                <option value="">Yoga</option>
+                                <option value="">Pilates</option>
+                                <option value="">Functional Fitness</option>
+                                <option value="">ABS & Back</option>
+                            </select>
+                        </form>
+                        <form action="" method="get">
+                            <label for="weekdays"></label>
+                            <select id="weekdays">
+                                <option value="" disabled selected>Select a day</option>
+                                <option value="">Monday</option>
+                                <option value="">Tuesday</option>
+                                <option value="">Wednesday</option>
+                                <option value="">Thursday</option>
+                                <option value="">Friday</option>
+                                <option value="">Saturday</option>
+                                </select>
+                        </form>
+                        <form action="" method="get">                        
+                            <label for="city"></label>
+                            <select id="city">
+                                <option value="" disabled selected>Select a city</option>
+                                <option value="">Riga</option>
+                                <option value="">Jurmala</option>
+                                <option value="">Sigulda</option>
+                                <option value="">Daugavpils</option>
+                            </select>
+                        </form>
+                        <form class="sign-up-text-input">
+                            <label for="note"></label>
+                            <input 
+                            id="note" 
+                            name="note" 
+                            placeholder="Leave a note">
+                        </form>
+                        <div class="sign-up-checkbox">
+                            <input type="checkbox" name="agreement" id="agreement" required>
+                            <label for="checkbox" class="checkbox-label"> I agree with <a href="./pages/terms-conditions.html">Terms and Conditions</a></label>
+                        </div>
+                        <button type="button" class="submit-btn">SUBMIT</button>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts" class="contacts-main-container">
+                <div class="contacts-subtitle">
+                    <h2>CONTACTS</h2>
+                </div>
+                <div class="contacts-info-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139178.64204450342!2d23.963927166657722!3d56.97164873817508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2z0KDQuNCz0LA!5e0!3m2!1sru!2slv!4v1708037022843!5m2!1sru!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contacts-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+473 4567890</p>
+                    </div>
+                    <div class="contacts-content">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:testuser@gmail.com">testuser@gmail.com</a></p>
+                    </div>
+                    <div class="contacts-content">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/">Follow us on Instagram</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer id="page-footer">
         <p>ALL RIGHTS RESERVED | PT</p>
-        <small>last update: 2-02-2024</small>
+        <small>last update: 16-02-2024</small>
     </footer>
 </body>
 </html>

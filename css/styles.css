@@ -152,7 +152,7 @@ a {
 .gym-title h1 {
     font-weight: 700;
     text-align: center;
-    font-size: 200px;
+    font-size: 150px;
     color: #22221e;
     transition: 0.5s;
     overflow-wrap: break-word;
@@ -279,10 +279,6 @@ main a {
     margin: 20px 0;
 }
 
-.funkfit-title>h3 {
-    font-size: 28.5px;
-}
-
 /* SCHEDULE */
 
 #schedule {
@@ -317,14 +313,13 @@ main a {
     text-align:center; 
     border: 2px;
     color: #d3cbaf;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     display: flex;
-    flex-flow: row wrap;
     padding: 0 100px 50px;
     align-items: center;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: scroll;
     scrollbar-color: #A68A64 #22221e;
     scrollbar-width: thin;
@@ -404,7 +399,7 @@ main a {
 
 .prices-table {
     text-align:center; 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     overflow: scroll;
     scrollbar-color: #656D4A #C2C5AA;
@@ -436,7 +431,7 @@ main a {
 }
 
 #prices p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 30px 0 20px;
     font-style: italic;
@@ -447,7 +442,8 @@ main a {
 /* SIGN UP SECTION */
 
 #sign-up {
-    background-color: #22221e;
+    background: #22221e;
+    background: linear-gradient(360deg, #22221e 50%, #656D4A 75%, #C2C5AA 100%);
 }
 
 .sign-up-section-container {
@@ -458,28 +454,42 @@ main a {
     align-content: flex-start;
 }
 
-.sign-up-section-container div {
-    width: 50%;
-}
-
 /* sign up sibtitle */
 
 .sign-up-subtitle {
     padding: 100px 0 70px;
-    background: #22221e;
-    background: linear-gradient(360deg, #22221e 0%, #656D4A 55%, #C2C5AA 100%);
-}   
+}
 
 .sign-up-subtitle h2 {
     font-weight: 700;
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
     color: #22221e;
     transition: 0.5s;
     overflow-wrap: break-word;
 }
 
 .sign-up-subtitle h2:hover {
+    color: #d3cbaf;
+    transition: 0.5s;
+}
+
+/* contacts sibtitle */
+
+.contacts-subtitle {
+    padding: 100px 0 50px;
+}
+
+.contacts-subtitle h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 70px;
+    color: #22221e;
+    transition: 0.5s;
+    overflow-wrap: break-word;
+}
+
+.contacts-subtitle h2:hover {
     color: #d3cbaf;
     transition: 0.5s;
 }
@@ -492,8 +502,9 @@ main a {
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     margin: 0 50px;
+    font-size: 16px;
 }
 
 .sign-up-form-container form {
@@ -574,14 +585,17 @@ main a {
 
 .sign-up-checkbox {
     display: flex;
+    flex-wrap: nowrap;
     margin: 10px 0 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
+    width: fit-content;
 }
 
 .sign-up-checkbox label {
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    width: fit-content;
 }
 
 .sign-up-checkbox input {
@@ -595,4 +609,59 @@ main a {
 
 #note {
     padding: 50px 10px;
+}
+
+.signup-and-contacts-container {
+    background: #22221e;
+    background: linear-gradient(360deg, #22221e 50%, #656D4A 75%, #C2C5AA 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-and-contacts-container section {
+    width: 50%;
+}
+
+.contacts-info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    margin: 0 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#contacts a:hover {
+    font-weight: 700;
+    color: #656D4A;
+}
+
+.contacts-info-container div {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    text-wrap: wrap; 
+}
+
+.contacts-info-container iframe {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.contacts-info-container i {
+    margin-right: 10px;
+}
+
+/* FOOTER */
+
+#page-footer {
+    background-color: #22221e;
+    color: #A4AC86;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 100px 0 30px;
 }
