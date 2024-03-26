@@ -1,357 +1,368 @@
 @font-face {
-    font-family: 'Chivo';
-    src: url(../assets/fonts/static/Chivo-Regular.ttf) format(truetype);
-    font-weight: 400;
+  font-family: "Chivo";
+  src: url(../assets/fonts/static/Chivo-Regular.ttf) format(truetype);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Chivo';
-    src: url(../assets/fonts/static/Chivo-Light.ttf) format(truetype);
-    font-weight: 100;
+  font-family: "Chivo";
+  src: url(../assets/fonts/static/Chivo-Light.ttf) format(truetype);
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: 'Chivo';
-    src: url(../assets/fonts/static/Chivo-Medium.ttf) format(truetype);
-    font-weight: 500;
+  font-family: "Chivo";
+  src: url(../assets/fonts/static/Chivo-Medium.ttf) format(truetype);
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Chivo';
-    src: url(../assets/fonts/static/Chivo-Bold.ttf) format(truetype);
-    font-weight: 700; 
+  font-family: "Chivo";
+  src: url(../assets/fonts/static/Chivo-Bold.ttf) format(truetype);
+  font-weight: 700;
 }
 
 body {
-    font-family: 'Chivo', sans-serif;
-    background-color: #C2C5AA;
-    color: #d3cbaf;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+  background-color: #c2c5aa;
+  color: #d3cbaf;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 #page-content {
-    padding: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit; 
+  text-decoration: none;
+  color: inherit;
 }
 
 /* NAVIGATION BAR */
 
 .nav-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px 30px;
-    padding: 30px 50px 0 75px;
-    font-size: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 30px;
+  padding: 30px 50px 0 75px;
+  font-size: 16px;
 }
 
 .nav-container ul {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    gap: 10px 10px
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
 }
 
 .nav-container li {
-    display: inline-block;
- }
+  display: inline-block;
+}
 
 .nav-btn {
-    background-color: #414833;
-    border: none;
-    border-radius: 20px;
-    color: #d3cbaf;
-    padding: 16px;
-    font-family: inherit;
-    font-weight: 500;
-    text-align: center;
-    font-size: 16px;
-    margin-right: 5px;
-    opacity: 1;
-    transition: 0.3s;
+  background-color: #414833;
+  border: none;
+  border-radius: 20px;
+  color: #d3cbaf;
+  padding: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 5px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .nav-btn:hover {
-    background-color: #A4AC86;
-    color: #23291c;
-    opacity: 0.6;
-    font-weight: 700;
+  background-color: #a4ac86;
+  color: #23291c;
+  opacity: 0.6;
+  font-weight: 700;
 }
 
 .search-bar-container {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .search-bar-form label {
-    display: none;
+  display: none;
 }
 
 .search-bar-input {
-    color: #23291c;
-    background-color: #A4AC86;
-    border: none;
-    border-radius: 20px;
-    padding: 16px;
-    width: fit-content;
-    font-family: inherit;
-    text-align: right;
-    font-weight: 700;
-    font-size: 16px;
-    margin-right: 5px;
-    opacity: 0.6;
+  color: #23291c;
+  background-color: #a4ac86;
+  border: none;
+  border-radius: 20px;
+  padding: 16px;
+  width: fit-content;
+  font-family: inherit;
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 5px;
+  opacity: 0.6;
 }
 
 .search-bar-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .search-bar-form input::placeholder,
 .search-bar-form input::-moz-placeholder {
-    color: #23291c;
-    opacity: 1;
+  color: #23291c;
+  opacity: 1;
 }
 
 .search-icon-btn {
-    background-color: transparent;
-    color: #333D29;
-    border: none;
-    display: inline-block;
-    margin: 0;
-    text-align: left;
+  background-color: transparent;
+  color: #333d29;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  text-align: left;
 }
 
 .search-icon-btn:hover {
-    color: #A4AC86;
-    opacity: 1;
-    font-weight: 700;
+  color: #a4ac86;
+  opacity: 1;
+  font-weight: 700;
 }
 
 /* HEADER - TITLE */
 
 .gym-title {
-    padding: 30px 0 70px;
-    background: rgb(34,34,30);
-    background: linear-gradient(0deg, rgb(33, 33, 31) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
+  padding: 30px 0 70px;
+  background: rgb(34, 34, 30);
+  background: linear-gradient(
+    0deg,
+    rgb(33, 33, 31) 0%,
+    rgba(101, 109, 74, 1) 37%,
+    rgba(194, 197, 170, 1) 100%
+  );
 }
 
 .gym-title h1 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 150px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 150px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .gym-title h1:hover {
-    color: #A4AC86;
-    transition: 0.5s;
+  color: #a4ac86;
+  transition: 0.5s;
 }
 
 /* HEADER - MAIN VIDEO */
 
 .video-container video {
-    width: 100%;
-    position: relative;
-    display: block;
+  width: 100%;
+  position: relative;
+  display: block;
 }
 
 /* TRAININGS SECTION*/
 
 main a {
-    text-decoration: none;
-    color: inherit; 
-    font-weight: 100;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 100;
 }
 
-#trainings a:hover{
-    color: #432818;
-    font-weight: 500;
+#trainings a:hover {
+  color: #432818;
+  font-weight: 500;
 }
 
 /* TRAININGS SUBTITLE */
 
 .trainings-subtitle {
-    padding: 100px 0 70px;
-    background: rgb(34,34,30);
-    background: linear-gradient(180deg, rgba(34,34,30,1) 0%, rgba(101,109,74,1) 37%, rgba(194,197,170,1) 100%);
+  padding: 100px 0 70px;
+  background: rgb(34, 34, 30);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 30, 1) 0%,
+    rgba(101, 109, 74, 1) 37%,
+    rgba(194, 197, 170, 1) 100%
+  );
 }
 
 .trainings-subtitle h2 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 100px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 100px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .trainings-subtitle h2:hover {
-    color: #d3cbaf;
-    transition: 0.5s;
+  color: #d3cbaf;
+  transition: 0.5s;
 }
 
 /*  TRAINING CARDS*/
 
 .training-sections-container {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 20px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 50px;
 }
 
 .training-section {
-    display: inline-block;
-    width: 20%;
-    min-width: 300px;
-    padding: 20px;
-    background-color: #656D4A;
-    border: none;
-    border-radius: 20px;
-    color: #d3cbaf;
-    font-family: inherit;
-    font-weight: 100;
-    text-align: center;
-    font-size: 20px;
-    transition: 0.3s;
+  display: inline-block;
+  width: 20%;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #656d4a;
+  border: none;
+  border-radius: 20px;
+  color: #d3cbaf;
+  font-family: inherit;
+  font-weight: 100;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
 .training-section div {
-    align-items: center;
+  align-items: center;
 }
 
 .training-section video {
-    width: 100%;
-    margin-top: 30px 0;
+  width: 100%;
+  margin-top: 30px 0;
 }
 
 .training-info {
-    margin-bottom: 20px;
-    min-height: 450px;
+  margin-bottom: 20px;
+  min-height: 450px;
 }
 
-.training-info p, blockquote {
-    text-align: left;
+.training-info p,
+blockquote {
+  text-align: left;
 }
 
 .training-info h3 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 3;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 3;
 }
 
-.training-section:hover{
-    background-color: #d3cbaf;
-    border: #656D4A solid 3px;
-    border-radius: 20px;
-    color: #656D4A
+.training-section:hover {
+  background-color: #d3cbaf;
+  border: #656d4a solid 3px;
+  border-radius: 20px;
+  color: #656d4a;
 }
 
 .training-meter {
-    font-weight: 100;
-    margin: 20px 0;
+  font-weight: 100;
+  margin: 20px 0;
 }
 
 .training-meter address {
-    margin: 20px 0;
-    font-style: normal;
+  margin: 20px 0;
+  font-style: normal;
 }
 
 .training-section blockquote {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 /* SCHEDULE */
 
 #schedule {
-    background-color: #22221e;
+  background-color: #22221e;
 }
 
 /* SCHEDULE SUBTITLE */
 
 .schedule-subtitle {
-    padding: 100px 0 70px;
-    background: #22221e;
-    background: linear-gradient(360deg, #22221e 0%, #656D4A 55%, #C2C5AA 100%);
-}   
+  padding: 100px 0 70px;
+  background: #22221e;
+  background: linear-gradient(360deg, #22221e 0%, #656d4a 55%, #c2c5aa 100%);
+}
 
 .schedule-subtitle h2 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 100px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 100px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .schedule-subtitle h2:hover {
-    color: #d3cbaf;
-    transition: 0.5s;
+  color: #d3cbaf;
+  transition: 0.5s;
 }
 
 /* SCHEDULE TABLE */
 
 .schedule-table {
-    text-align:center; 
-    border: 2px;
-    color: #d3cbaf;
-    font-size: 20px;
-    font-weight: 100;
-    display: flex;
-    padding: 0 100px 50px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    overflow: scroll;
-    scrollbar-color: #A68A64 #22221e;
-    scrollbar-width: thin;
+  text-align: center;
+  border: 2px;
+  color: #d3cbaf;
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  padding: 0 100px 50px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: scroll;
+  scrollbar-color: #a68a64 #22221e;
+  scrollbar-width: thin;
 }
 
 .schedule-table td {
-    border: solid 2px #d3cbaf;
-    padding: 5px 15px;
-    text-wrap: nowrap;
+  border: solid 2px #d3cbaf;
+  padding: 5px 15px;
+  text-wrap: nowrap;
 }
 
 #empty-cell {
-    border: none transparent;
-    background-color: transparent;
+  border: none transparent;
+  background-color: transparent;
 }
 
 .hover-increase:hover {
-    background-color: #A68A64;
-    color: #22221e;
-    border: solid 4px #d3cbaf;
-    font-weight: 700;
+  background-color: #a68a64;
+  color: #22221e;
+  border: solid 4px #d3cbaf;
+  font-weight: 700;
 }
 
 .dark-cell {
-    background-color: #A68A64;
-    border: solid 1px #A68A64;
-    color: #22221e;
+  background-color: #a68a64;
+  border: solid 1px #a68a64;
+  color: #22221e;
 }
 
 .day-without-training {
-    color: #A68A64;
-    font-weight: 700;
+  color: #a68a64;
+  font-weight: 700;
 }
 
 /* PRICES SECTION */
@@ -359,309 +370,314 @@ main a {
 /* PRICES SUBTITLE */
 
 .prices-subtitle {
-    padding: 100px 0 40px;
-    background: rgb(34,34,30);
-    background: linear-gradient(180deg, rgba(34,34,30,1) 10%, rgba(101,109,74,1) 50%, rgba(194,197,170,1) 100%);
+  padding: 100px 0 40px;
+  background: rgb(34, 34, 30);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 30, 1) 10%,
+    rgba(101, 109, 74, 1) 50%,
+    rgba(194, 197, 170, 1) 100%
+  );
 }
 
 .prices-subtitle h2 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 100px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 100px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .prices-subtitle h2:hover {
-    color: #d3cbaf;
-    transition: 0.5s;
+  color: #d3cbaf;
+  transition: 0.5s;
 }
 
 /* PRICES TABLES */
 
 .prices-table-container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .prices-table-container h3 {
-    font-weight: 500;
-    text-align: center;
-    font-size: 50px;
-    color: #22221e;
-    overflow-wrap: break-word;
-    margin: 30px 20px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 50px;
+  color: #22221e;
+  overflow-wrap: break-word;
+  margin: 30px 20px;
 }
 
 .prices-table {
-    text-align:center; 
-    font-size: 20px;
-    font-weight: 100;
-    overflow: scroll;
-    scrollbar-color: #656D4A #C2C5AA;
-    scrollbar-width: thin;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  overflow: scroll;
+  scrollbar-color: #656d4a #c2c5aa;
+  scrollbar-width: thin;
 }
 
 .prices-table th {
-    border: solid 2px #22221e;
-    padding: 5px 15px;
-    text-wrap: nowrap;
-    background-color: #656D4A;
-    color: #C2C5AA;
-
-} 
+  border: solid 2px #22221e;
+  padding: 5px 15px;
+  text-wrap: nowrap;
+  background-color: #656d4a;
+  color: #c2c5aa;
+}
 
 .prices-table td {
-    border: solid 2px #22221e;
-    padding: 5px 15px;
-    text-wrap: nowrap;
-    background-color: transparent;
-    color: #22221e;
-    transition: 0.3s;
-} 
+  border: solid 2px #22221e;
+  padding: 5px 15px;
+  text-wrap: nowrap;
+  background-color: transparent;
+  color: #22221e;
+  transition: 0.3s;
+}
 
-.prices-bold:hover { 
-    font-weight: 700;
-    transition: 0.3s;
-    border: solid 4px #22221e;
+.prices-bold:hover {
+  font-weight: 700;
+  transition: 0.3s;
+  border: solid 4px #22221e;
 }
 
 #prices p {
-    font-size: 15px;
-    font-weight: 400;
-    margin: 30px 0 20px;
-    font-style: italic;
-    color: #22221e;
-    text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 30px 0 20px;
+  font-style: italic;
+  color: #22221e;
+  text-align: center;
 }
 
 /* SIGN UP SECTION */
 
 #sign-up {
-    background: #22221e;
-    background: linear-gradient(360deg, #22221e 50%, #656D4A 75%, #C2C5AA 100%);
+  background: #22221e;
+  background: linear-gradient(360deg, #22221e 50%, #656d4a 75%, #c2c5aa 100%);
 }
 
 .sign-up-section-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
 }
 
 /* sign up sibtitle */
 
 .sign-up-subtitle {
-    padding: 100px 0 70px;
+  padding: 100px 0 70px;
 }
 
 .sign-up-subtitle h2 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 70px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 70px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .sign-up-subtitle h2:hover {
-    color: #d3cbaf;
-    transition: 0.5s;
+  color: #d3cbaf;
+  transition: 0.5s;
 }
 
 /* contacts sibtitle */
 
 .contacts-subtitle {
-    padding: 100px 0 50px;
+  padding: 100px 0 50px;
 }
 
 .contacts-subtitle h2 {
-    font-weight: 700;
-    text-align: center;
-    font-size: 70px;
-    color: #22221e;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+  font-size: 70px;
+  color: #22221e;
+  transition: 0.5s;
+  overflow-wrap: break-word;
 }
 
 .contacts-subtitle h2:hover {
-    color: #d3cbaf;
-    transition: 0.5s;
+  color: #d3cbaf;
+  transition: 0.5s;
 }
 
 /* sign up form */
 
 .sign-up-form-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 70%;
-    margin: 0 50px;
-    font-size: 16px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 50px;
+  font-size: 16px;
 }
 
 .sign-up-form-container form {
-    margin-bottom: 10px;
-    border-radius: 20px;
-    width: 100%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  width: 100%;
 }
 
 .sign-up-form-container input {
-    display: inline-block;
-    background-color: #C2C5AA;
-    border: solid 2px #C2C5AA; 
-    border-radius: 20px;
-    padding: 10px;
-    outline: none;
-    text-align: left;
-    font-weight: 700;
-    font-size: 16px;
-    color: #22221e;
-    justify-content: center;
-    align-items: center;
-    box-sizing:border-box;
+  display: inline-block;
+  background-color: #c2c5aa;
+  border: solid 2px #c2c5aa;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  color: #22221e;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .sign-up-form-container input:hover {
-    border: solid 4px #656D4A; 
+  border: solid 4px #656d4a;
 }
 
-.sign-up-form-container form::placeholder 
-.search-bar-form input::-moz-placeholder {
-    opacity: 1;
+.sign-up-form-container
+  form::placeholder
+  .search-bar-form
+  input::-moz-placeholder {
+  opacity: 1;
 }
 
 .sign-up-form-container select {
-    display: inline-block;
-    background-color: #C2C5AA;
-    border: solid 2px #C2C5AA; 
-    border-radius: 20px;
-    padding: 10px;
-    outline: none;
-    text-align: left;
-    font-weight: 700;
-    font-size: 16px;
-    color: #22221e;
-    width: 100%;
+  display: inline-block;
+  background-color: #c2c5aa;
+  border: solid 2px #c2c5aa;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  color: #22221e;
+  width: 100%;
 }
 
 .sign-up-form-container select:hover {
-    border: solid 4px #656D4A; 
+  border: solid 4px #656d4a;
 }
 
 .submit-btn {
-    margin: 20px 0;
-    padding: 16px;
-    background-color: #414833;
-    border: 2px solid #C2C5AA;
-    border-radius: 20px;
-    color: #d3cbaf;
-    transition: 0.3s;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    min-width: fit-content;
+  margin: 20px 0;
+  padding: 16px;
+  background-color: #414833;
+  border: 2px solid #c2c5aa;
+  border-radius: 20px;
+  color: #d3cbaf;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: fit-content;
 }
-
 
 .submit-btn:hover {
-    background-color: #C2C5AA;
-    color: #23291c;
-    font-weight: 700;
-    transition: 0.3s;
+  background-color: #c2c5aa;
+  color: #23291c;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
-.sign-up-text-input input{
-    width: 100%
+.sign-up-text-input input {
+  width: 100%;
 }
 
 .sign-up-checkbox {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 10px 0 30px;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
-    width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0 30px;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  width: fit-content;
 }
 
 .sign-up-checkbox label {
-    text-wrap: wrap;
-    width: fit-content;
+  text-wrap: wrap;
+  width: fit-content;
 }
 
 .sign-up-checkbox input {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .sign-up-checkbox a:hover {
-    font-weight: 700;
-    color: #656D4A;
+  font-weight: 700;
+  color: #656d4a;
 }
 
 #note {
-    padding: 50px 10px;
+  padding: 50px 10px;
 }
 
 .signup-and-contacts-container {
-    background: #22221e;
-    background: linear-gradient(360deg, #22221e 50%, #656D4A 75%, #C2C5AA 100%);
-    display: flex;
-    justify-content: space-between;
+  background: #22221e;
+  background: linear-gradient(360deg, #22221e 50%, #656d4a 75%, #c2c5aa 100%);
+  display: flex;
+  justify-content: space-between;
 }
 
 .signup-and-contacts-container section {
-    width: 50%;
+  width: 50%;
 }
 
 .contacts-info-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    align-content: center;
-    justify-content: center;
-    margin: 0 50px;
-    font-size: 16px;
-    font-weight: 500;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  margin: 0 50px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #contacts a:hover {
-    font-weight: 700;
-    color: #656D4A;
+  font-weight: 700;
+  color: #656d4a;
 }
 
 .contacts-info-container div {
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    text-wrap: wrap; 
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  text-wrap: wrap;
 }
 
 .contacts-info-container iframe {
-    margin: 0 0 30px;
-    width: 100%;
+  margin: 0 0 30px;
+  width: 100%;
 }
 
 .contacts-info-container i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* FOOTER */
 
 #page-footer {
-    background-color: #22221e;
-    color: #A4AC86;
-    text-align: center;
-    font-weight: 100;
-    font-size: 15px;
-    padding: 100px 0 30px;
+  background-color: #22221e;
+  color: #a4ac86;
+  text-align: center;
+  font-weight: 100;
+  font-size: 15px;
+  padding: 100px 0 30px;
 }
